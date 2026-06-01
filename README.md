@@ -1,1 +1,1114 @@
 # dacruzeaguiaradvogado
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Da Cruz & Aguiar Advogados | Direito Cível, Previdenciário, Consumidor e Trabalhista em Rio das Ostras</title>
+    
+    <!-- Meta tags para Google Ads -->
+    <meta name="description" content="Da Cruz & Aguiar Advogados em Rio das Ostras - Especialistas em Direito Cível, Previdenciário, Consumidor e Trabalhista. Mais de 4 anos de atuação. Atendimento humanizado 24h.">
+    <meta name="keywords" content="advogado rio das ostras, da cruz e aguiar advogados, advogado previdenciário, advogado trabalhista, direito consumidor">
+    
+    <!-- Fontes elegantes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f5f7fa;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Títulos em maiúsculo com fonte elegante */
+        h1, h2, h3, .section-title, .cta-button, .menu-item, .badge, .area-tag {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        /* Sombreado no título principal */
+        .hero-content h1 {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1a3a5c;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: #d4a017;
+            animation: expandWidth 0.8s ease-out;
+        }
+
+        @keyframes expandWidth {
+            from { width: 0; }
+            to { width: 60px; }
+        }
+
+        /* Navegação */
+        .navbar {
+            background: #1a3a5c;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo span {
+            color: #d4a017;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #d4a017;
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover:after {
+            width: 100%;
+        }
+
+        .nav-menu a:hover {
+            color: #d4a017;
+        }
+
+        /* Top bar */
+        .top-bar {
+            background: #0f2b3d;
+            color: white;
+            padding: 10px 0;
+            font-size: 0.85rem;
+            animation: slideDown 0.5s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #d4a017;
+        }
+
+        .whatsapp-top {
+            background: #25d366;
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-top:hover {
+            background: #128C7E;
+            transform: scale(1.05);
+        }
+
+        /* Hero Section com imagem de fundo - sem imagem lateral */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(26, 58, 92, 0.85), rgba(44, 82, 130, 0.9)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 80px 20px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-content h1 {
+            margin-bottom: 20px;
+            line-height: 1.2;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Sombreado no subtítulo */
+        .hero-content .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #d4a017;
+            font-weight: 500;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 0.8s ease 0.1s both;
+        }
+
+        .badge {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(5px);
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            animation: pulse 2s infinite, fadeInUp 0.8s ease;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.85;
+            }
+        }
+
+        .areas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        /* Sombreado nas tags das áreas de atuação */
+        .area-tag {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(4px);
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            opacity: 0;
+            animation: fadeInUp 0.5s ease forwards;
+        }
+
+        .area-tag:nth-child(1) { animation-delay: 0.2s; }
+        .area-tag:nth-child(2) { animation-delay: 0.3s; }
+        .area-tag:nth-child(3) { animation-delay: 0.4s; }
+        .area-tag:nth-child(4) { animation-delay: 0.5s; }
+
+        .area-tag:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-3px) scale(1.02);
+        }
+
+        /* Sombreado no texto de estatísticas */
+        .hero-content p {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+            animation: fadeInUp 0.8s ease 0.6s both;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #d4a017;
+            color: #1a3a5c;
+            padding: 16px 38px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 40px;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            animation: pulse 2s infinite, fadeInUp 0.8s ease 0.3s both;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .cta-button:hover:before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .cta-button:hover {
+            background: #c49010;
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        /* Quem Somos com imagem de fundo */
+        .about {
+            background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 80px 20px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .partners {
+            background: rgba(248, 249, 250, 0.9);
+            backdrop-filter: blur(5px);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .partners:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .cities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .city-badge {
+            background: #1a3a5c;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .city-badge:hover {
+            background: #d4a017;
+            color: #1a3a5c;
+            transform: translateY(-2px);
+        }
+
+        .about-stats {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .stat {
+            text-align: center;
+            background: rgba(255,255,255,0.8);
+            padding: 15px;
+            border-radius: 15px;
+            backdrop-filter: blur(4px);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .stat:hover {
+            transform: translateY(-5px);
+            background: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #d4a017;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .stat-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Áreas de atuação com imagem de fundo */
+        .practice-areas {
+            background: linear-gradient(rgba(245, 247, 250, 0.95), rgba(245, 247, 250, 0.95)), url('https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?q=80&w=2069&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .area-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            padding: 35px 25px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            opacity: 0;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .area-card:nth-child(1) { animation-delay: 0.1s; }
+        .area-card:nth-child(2) { animation-delay: 0.2s; }
+        .area-card:nth-child(3) { animation-delay: 0.3s; }
+        .area-card:nth-child(4) { animation-delay: 0.4s; }
+
+        .area-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            background: white;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .area-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .area-card:hover .area-icon {
+            transform: scale(1.1);
+        }
+
+        /* Depoimentos com imagem de fundo */
+        .testimonials {
+            background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1444653610075-5df214748ccc?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .testimonial-card {
+            background: rgba(248, 249, 250, 0.9);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: left;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            opacity: 0;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .testimonial-card:nth-child(1) { animation-delay: 0.1s; }
+        .testimonial-card:nth-child(2) { animation-delay: 0.2s; }
+        .testimonial-card:nth-child(3) { animation-delay: 0.3s; }
+
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            background: white;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+        }
+
+        .testimonial-card:before {
+            content: '"';
+            font-size: 4rem;
+            color: #d4a017;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            opacity: 0.3;
+            font-family: serif;
+            transition: opacity 0.3s ease;
+        }
+
+        .testimonial-card:hover:before {
+            opacity: 0.5;
+        }
+
+        /* Formulário com imagem de fundo */
+        .form-section {
+            background: linear-gradient(rgba(26, 58, 92, 0.9), rgba(44, 82, 130, 0.9)), url('https://images.unsplash.com/photo-1444882156561-0fa01912f3ed?q=80&w=2034&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .form-container {
+            max-width: 550px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+            padding: 45px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .form-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+        }
+
+        .form-group {
+            margin: 20px 0;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 14px 18px;
+            font-size: 0.9rem;
+            font-family: 'Poppins', sans-serif;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #d4a017;
+            box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: #0f2b3d;
+            color: white;
+            padding: 50px 20px 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-info h4 {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            margin-bottom: 18px;
+            color: #d4a017;
+            letter-spacing: 1px;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-info h4:hover {
+            transform: translateX(5px);
+        }
+
+        .footer-info p, .footer-info a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.8;
+            transition: all 0.3s ease;
+        }
+
+        .footer-info a:hover {
+            color: #d4a017;
+            transform: translateX(5px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.75rem;
+        }
+
+        /* WhatsApp flutuante */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background: #128C7E;
+        }
+
+        /* Menu mobile */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-menu-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Scroll reveal custom */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .about-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-content {
+                text-align: center;
+            }
+            
+            .areas {
+                justify-content: center;
+            }
+            
+            .nav-menu {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+                padding: 20px 0;
+                gap: 15px;
+            }
+            
+            .nav-menu.active {
+                display: flex;
+                animation: fadeInUp 0.3s ease;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .top-bar .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contact-info {
+                justify-content: center;
+            }
+            
+            .about-stats {
+                justify-content: center;
+            }
+            
+            .form-container {
+                padding: 30px 20px;
+            }
+            
+            .hero, .about, .practice-areas, .testimonials, .form-section {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span>📍 RIO DAS OSTRAS - RJ</span>
+                <span>📞 (22) 99284-1029</span>
+                <a href="https://wa.me/5522992841029" class="whatsapp-top">💬 WHATSAPP (22) 99284-1029</a>
+            </div>
+            <div>⚖️ ATENDIMENTO PRESENCIAL E ONLINE 24H</div>
+        </div>
+    </div>
+
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">DA CRUZ & <span>AGUIAR</span><br><small style="font-size: 0.65rem; letter-spacing: 1px;">ADVOGADOS</small></div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">INÍCIO</a></li>
+                <li><a href="#quem-somos">QUEM SOMOS</a></li>
+                <li><a href="#areas">ÁREAS</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div class="hero-content">
+            <div class="badge">⚖️ DA CRUZ & AGUIAR ADVOGADOS - RIO DAS OSTRAS</div>
+            <h1>SEUS DIREITOS<br><span style="color: #d4a017;">PROTEGIDOS COM EXCELÊNCIA</span></h1>
+            <div class="subtitle">ESTRATÉGIAS JURÍDICAS EFICAZES PARA VOCÊ E SUA FAMÍLIA</div>
+            
+            <div class="areas">
+                <span class="area-tag">⚖️ DIREITO CÍVEL</span>
+                <span class="area-tag">🏦 PREVIDENCIÁRIO</span>
+                <span class="area-tag">🛍️ CONSUMIDOR</span>
+                <span class="area-tag">👔 TRABALHISTA</span>
+            </div>
+            
+            <p style="margin: 20px 0; font-size: 0.95rem;">
+                MAIS DE 500 CLIENTES ATENDIDOS NA REGIÃO DOS LAGOS. SOLUÇÕES JURÍDICAS PERSONALIZADAS PARA CADA CASO.
+            </p>
+            
+            <a href="https://wa.me/5522992841029?text=Olá!%20Gostaria%20de%20agendar%20minha%20consulta%20com%20Da%20Cruz%20e%20Aguiar%20Advogados!" target="_blank" class="cta-button">📞 FALAR NO WHATSAPP →</a>
+            
+            <p style="font-size: 0.75rem; opacity: 0.85;">
+                ✅ ATENDIMENTO PRESENCIAL EM RIO DAS OSTRAS | ✅ CONSULTA ONLINE 24H
+            </p>
+        </div>
+    </div>
+
+    <!-- Quem Somos -->
+    <div class="about" id="quem-somos">
+        <div class="container">
+            <div style="text-align: center;">
+                <h2 class="section-title">QUEM SOMOS</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text" data-aos="fade-right" data-aos-duration="800">
+                    <p><strong>DA CRUZ & AGUIAR ADVOGADOS</strong> é um escritório de advocacia com mais de <strong>4 ANOS DE ATUAÇÃO</strong> consolidada entre a cidade do Rio de Janeiro e Rio das Ostras, atendendo com excelência e dedicação nas áreas do Direito Cível, Previdenciário, Consumidor e Trabalhista.</p>
+                    
+                    <p>Nossa trajetória é marcada pelo compromisso com a justiça e a defesa incansável dos direitos de nossos clientes. Acreditamos que cada caso é único e merece uma estratégia jurídica personalizada, aliando conhecimento técnico à sensibilidade humana.</p>
+                    
+                    <div class="partners">
+                        <h4>🌎 REDE DE PARCEIROS ESTRATÉGICOS</h4>
+                        <p style="font-size: 0.85rem; margin-bottom: 12px;">Para ampliar nossa capacidade de atendimento e oferecer um suporte jurídico ainda mais abrangente, contamos com advogados parceiros estrategicamente posicionados em diferentes cidades:</p>
+                        <div class="cities">
+                            <span class="city-badge">RIO DE JANEIRO</span>
+                            <span class="city-badge">NITERÓI</span>
+                            <span class="city-badge">CABO FRIO</span>
+                            <span class="city-badge">BÚZIOS</span>
+                            <span class="city-badge">MACAÉ</span>
+                            <span class="city-badge">CAMPOS DOS GOYTACAZES</span>
+                            <span class="city-badge">SÃO PEDRO DA ALDEIA</span>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="800">
+                    <div class="about-stats">
+                        <div class="stat" id="stat1">
+                            <div class="stat-number" id="yearsCount">4+</div>
+                            <div class="stat-label">ANOS DE ATUAÇÃO</div>
+                        </div>
+                        <div class="stat" id="stat2">
+                            <div class="stat-number" id="clientsCount">500+</div>
+                            <div class="stat-label">CLIENTES ATENDIDOS</div>
+                        </div>
+                        <div class="stat" id="stat3">
+                            <div class="stat-number" id="successCount">98%</div>
+                            <div class="stat-label">CASOS DE SUCESSO</div>
+                        </div>
+                    </div>
+                    <div class="partners" style="margin-top: 20px;">
+                        <h4>💼 SUPORTE JURÍDICO COMPLETO</h4>
+                        <p style="font-size: 0.85rem;">Nossa rede de colaboradores nos permite atuar em diversas comarcas do estado do Rio de Janeiro, garantindo agilidade processual e presença jurídica onde você precisar. Da capital à Região dos Lagos, estamos preparados para defender seus interesses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Áreas de Atuação -->
+    <div class="practice-areas" id="areas">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="600">ÁREAS DE ATUAÇÃO</h2>
+            <p style="color: #555; margin-top: 10px;" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">SOLUÇÕES JURÍDICAS COMPLETAS PARA VOCÊ</p>
+            
+            <div class="areas-grid">
+                <div class="area-card" data-aos="flip-left" data-aos-duration="600">
+                    <div class="area-icon">⚖️</div>
+                    <h3>DIREITO CÍVEL</h3>
+                    <p>Contratos, inventário, divórcio, pensão alimentícia, guarda de filhos, responsabilidade civil, indenizações e ações de família.</p>
+                </div>
+                
+                <div class="area-card" data-aos="flip-left" data-aos-duration="600" data-aos-delay="100">
+                    <div class="area-icon">🏦</div>
+                    <h3>DIREITO PREVIDENCIÁRIO</h3>
+                    <p>Aposentadoria por idade/tempo/especial, auxílio-doença, BPC/LOAS, pensão por morte, revisão de benefícios e recursos ao INSS.</p>
+                </div>
+                
+                <div class="area-card" data-aos="flip-left" data-aos-duration="600" data-aos-delay="200">
+                    <div class="area-icon">🛍️</div>
+                    <h3>DIREITO DO CONSUMIDOR</h3>
+                    <p>Problemas com bancos, planos de saúde, telefonia, compras online, cobranças indevidas, negativação indevida e danos morais.</p>
+                </div>
+                
+                <div class="area-card" data-aos="flip-left" data-aos-duration="600" data-aos-delay="300">
+                    <div class="area-icon">👔</div>
+                    <h3>DIREITO TRABALHISTA</h3>
+                    <p>Reclamação trabalhista, horas extras, rescisão indireta, assédio moral, acidente de trabalho, cálculo de verbas rescisórias.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Depoimentos -->
+    <div class="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="600">O QUE DIZEM NOSSOS CLIENTES</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="zoom-in" data-aos-duration="600">
+                    <div class="testimonial-text">
+                        "Excelente atendimento! Resolveram meu problema com o INSS em poucos meses. Consegui minha aposentadoria que estava travada há mais de 1 ano."
+                    </div>
+                    <div class="testimonial-author">- MARIA F. - RIO DAS OSTRAS</div>
+                    <div style="color: #d4a017; margin-top: 10px;">★★★★★</div>
+                </div>
+                <div class="testimonial-card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+                    <div class="testimonial-text">
+                        "Profissionais competentes e muito atenciosos. Venci uma ação contra o banco por cobrança indevida e recebi indenização. Recomendo fortemente!"
+                    </div>
+                    <div class="testimonial-author">- CARLOS E. - EXTENSÃO DO BOSQUE</div>
+                    <div style="color: #d4a017; margin-top: 10px;">★★★★★</div>
+                </div>
+                <div class="testimonial-card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+                    <div class="testimonial-text">
+                        "Me orientaram em todo processo trabalhista. Consegui todos os meus direitos após ser demitido injustamente. Atendimento humanizado e eficiente."
+                    </div>
+                    <div class="testimonial-author">- JULIANA S. - CENTRO</div>
+                    <div style="color: #d4a017; margin-top: 10px;">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulário de Contato -->
+    <div class="form-section" id="contato">
+        <div class="container">
+            <div class="form-container" data-aos="flip-up" data-aos-duration="800">
+                <h2>AGENDE SUA CONSULTA</h2>
+                <p style="margin: 10px 0 20px; color: #555;">PREENCHA O FORMULÁRIO E RETORNAREMOS EM ATÉ 24H</p>
+                
+                <form id="leadForm">
+                    <div class="form-group">
+                        <input type="text" name="nome" placeholder="NOME COMPLETO" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="E-MAIL" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="telefone" placeholder="WHATSAPP COM DDD (EX: 22992841029)" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="area" required>
+                            <option value="">SELECIONE A ÁREA DE INTERESSE</option>
+                            <option value="civel">DIREITO CÍVEL</option>
+                            <option value="previdenciario">DIREITO PREVIDENCIÁRIO</option>
+                            <option value="consumidor">DIREITO DO CONSUMIDOR</option>
+                            <option value="trabalhista">DIREITO TRABALHISTA</option>
+                            <option value="outros">OUTROS</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensagem" placeholder="DESCREVA RESUMIDAMENTE SEU CASO (OPCIONAL)"></textarea>
+                    </div>
+                    <button type="submit" class="cta-button" style="width: 100%;">
+                        ✅ AGENDAR CONSULTA
+                    </button>
+                </form>
+                
+                <p style="font-size: 0.7rem; margin-top: 20px; color: #999;">
+                    SEUS DADOS ESTÃO SEGUROS. NÃO COMPARTILHAMOS COM TERCEIROS.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info" data-aos="fade-right" data-aos-duration="600">
+                    <h4>📌 DA CRUZ & AGUIAR ADVOGADOS</h4>
+                    <p>ESCRITÓRIO DE ADVOCACIA<br>ESPECIALISTA EM DIREITO CÍVEL, PREVIDENCIÁRIO, CONSUMIDOR E TRABALHISTA</p>
+                    <p>📍 RIO DAS OSTRAS - RJ<br>ATENDIMENTO PRESENCIAL E ONLINE 24H</p>
+                </div>
+                <div class="footer-info" data-aos="fade-up" data-aos-duration="600">
+                    <h4>📞 CONTATO</h4>
+                    <p>📱 (22) 99284-1029<br>📧 thaguiar.corp@gmail.com<br>💬 WHATSAPP: (22) 99284-1029</p>
+                </div>
+                <div class="footer-info" data-aos="fade-left" data-aos-duration="600">
+                    <h4>🕒 HORÁRIO DE ATENDIMENTO</h4>
+                    <p>ATENDIMENTO 24 HORAS POR DIA<br>7 DIAS POR SEMANA<br>ATENDIMENTO ONLINE 24H VIA WHATSAPP</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 DA CRUZ & AGUIAR ADVOGADOS - TODOS OS DIREITOS RESERVADOS</p>
+                <p style="margin-top: 8px;">
+                    <a href="#">POLÍTICA DE PRIVACIDADE</a> | 
+                    <a href="#">TERMOS DE USO</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5522992841029?text=Olá!%20Gostaria%20de%20agendar%20minha%20consulta%20com%20Da%20Cruz%20e%20Aguiar%20Advogados!" 
+       class="whatsapp-float" target="_blank">
+        💬
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializar AOS animations
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+        
+        // Menu mobile
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+        
+        // Scroll suave para navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+        
+        // Envio do formulário - redireciona para WhatsApp
+        const form = document.getElementById('leadForm');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const nome = document.querySelector('input[name="nome"]').value;
+                const telefone = document.querySelector('input[name="telefone"]').value;
+                const area = document.querySelector('select[name="area"]').value;
+                const mensagem = document.querySelector('textarea[name="mensagem"]').value;
+                
+                const textoWhats = `Olá! Meu nome é ${nome}%0A%0A📋 *Área de interesse:* ${area}%0A📞 *Telefone para contato:* ${telefone}%0A%0A📝 *Mensagem:* ${mensagem || 'Gostaria de agendar uma consulta com Da Cruz & Aguiar Advogados.'}%0A%0A*Solicito retorno pelo WhatsApp.*`;
+                
+                window.open(`https://wa.me/5522992841029?text=${textoWhats}`, '_blank');
+                
+                form.reset();
+            });
+        }
+        
+        // Efeito de navbar ao scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = '#0f2b3d';
+                navbar.style.padding = '10px 0';
+            } else {
+                navbar.style.background = '#1a3a5c';
+                navbar.style.padding = '15px 0';
+            }
+        });
+    </script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</body>
+</html>
